@@ -19,6 +19,7 @@ namespace SnakeAndLadder
 
             //Variables
             int position = 0;
+            int count = 0;
 
             //creatting random object
             Random die = new Random();
@@ -58,8 +59,9 @@ namespace SnakeAndLadder
                 {
                     position = 0;
                 }
+                Console.WriteLine("The position after the {0} die roll is {1} ", count, position);
             }
-
+            Console.WriteLine("The number of times the die thrown is: " + count);
         }
     }
 }
